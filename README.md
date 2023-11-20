@@ -88,18 +88,7 @@ photoshop uses the `GPU` to process these tools so before using these tools make
 <details>
 <summary>:camera: Adobe Camera Raw</summary>
 
-another useful adobe software is `camera raw` if you want to work with it beside photoshop you must install it separately to do this, after photoshop installation run `cameraRawInstaller.sh` script with commands below:
-```bash
-chmod +x cameraRawInstaller.sh
-./cameraRawInstaller.sh
-```
-then restart photoshop.you can open it from 
-`Edit >>Preferences >> Camera Raw`
-
-> **_NOTE1:_** the size of camera raw installation file is about 400MB
-
-
-> **_NOTE2:_** camera raw performance depends on your graphic card driver and its configuration
+just select 2 option in the installer
 
 </details>
 
@@ -107,8 +96,7 @@ then restart photoshop.you can open it from
 to uninstall photoshop you can use the uninstaller script with commands below
 
 ```bash
-chmod +x uninstaller.sh
-./uninstaller.sh
+chmod +x uninstaller.sh && ./uninstaller.sh
 ```
 
 
