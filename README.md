@@ -37,7 +37,7 @@ sudo pacman -Syyu lolcat wine winetricks wine-mono wine-gecko
 
 3. at least 5GB in your /home directory (or you can use -d /path/to/dir)
 
-4. make sure you have an internet connection and about 1.5 Gib traffic to download photoshop and its components
+4. internet connection and about 40 minutes
 
 ## :computer: Installation
 1. clone this repo
@@ -58,7 +58,7 @@ chmod +x setup.sh && ./setup.sh
 ![setup-screenshot](images/setup-screenshot.png)
 </div>
 
-4. set windows 7 version of wine
+4. all done, just wait
 
 ## :wine_glass: wineprefix Configuration
 if you need to configure the wineprefix of photoshop you can use `winecfg.sh` script just run the command below
@@ -88,7 +88,7 @@ photoshop uses the `GPU` to process these tools so before using these tools make
 <details>
 <summary>:camera: Adobe Camera Raw</summary>
 
-just select 2 option in the installer
+just select option in the installer
 
 </details>
 
@@ -104,9 +104,3 @@ chmod +x uninstaller.sh && ./uninstaller.sh
 ![GitHub](https://img.shields.io/github/license/Gictorbit/photoshopCClinux?style=for-the-badge)
 
 ---
-<a href="https://poshtiban.com">
-<img src="images/poshtibancom.png" width="25%"> 
-</a>
-<a href="https://github.com/Gictorbit/illustratorCClinux">
-<img src="https://github.com/Gictorbit/illustratorCClinux/raw/master/images/AiIcon.png" width="9%">
-</a>
