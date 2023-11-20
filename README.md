@@ -19,13 +19,15 @@ and sets some necessary components up for the best performance
 
 ## List of deps:
 * wine
+* wine-mono
+* wine-gecko
 * winetricks
 * lolcat :D
 * md5sum
 
 or just...
 ```bash
-sudo pacman -Syyu lolcat wine winetricks md5sum
+sudo pacman -Syyu lolcat wine winetricks wine-mono wine-gecko
 ```
 
 ## :warning: You will need
