@@ -11,13 +11,11 @@ This bash script helps you to install Photoshop CC version 19 on your Linux mach
 and sets some necessary components up for the best performance
 
 ## :rocket: Features
-* downloads necessary components and installs them (`vcrun`, `atmlib`, `msxml`...)
-* creates photoshop command and a desktop entry
-* wine dark mode
-* supports graphic cards like (`intel`, `Nvidia`)
-* saves the downloaded files in your cache directory
-* It's free and you will not need any license key
-* works on any Linux distribution
+* it works (OMG)
+* creates photoshop desktop entry
+* supports graphic cards (WOW)
+* it's free and you not need license key
+* works on Linux
 
 ## List of deps:
 * wine
@@ -27,7 +25,7 @@ and sets some necessary components up for the best performance
 
 or just...
 ```bash
-Sudo pacman -Syyu lolcat wine winetricks md5sum
+sudo pacman -Syyu lolcat wine winetricks md5sum
 ```
 
 ## :warning: You will need
