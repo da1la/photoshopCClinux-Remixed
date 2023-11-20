@@ -43,7 +43,7 @@ sudo pacman -Syyu lolcat wine winetricks wine-mono wine-gecko
 1. clone this repo
 
 ```bash
-git clone https://github.com/da1la/photoshopCClinux-Remixed.git && cd photoshopCClinux
+git clone https://github.com/da1la/photoshopCClinux-Remixed.git && cd photoshopCClinux-Remixed
 ```
 2. run installer
 
