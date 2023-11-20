@@ -3,7 +3,7 @@
 
 ![screenshot](images/Screenshot.png)
 
-![wine version]([https://img.shields.io/badge/wine-8.20-red]) ![Tested on arch](https://img.shields.io/badge/Tested%20on-Archlinux-brightgreen) ![GitHub stars](https://img.shields.io/github/stars/Gictorbit/photoshopCClinux) ![rep size](https://img.shields.io/github/repo-size/da1la/photoshopCClinux-Remixed) ![bash](https://img.shields.io/badge/zsh-5.9-magenta)
+![wine version](https://img.shields.io/badge/wine-8.20-red) ![Tested on arch](https://img.shields.io/badge/Tested%20on-Archlinux-brightgreen) ![GitHub stars](https://img.shields.io/github/stars/Gictorbit/photoshopCClinux) ![rep size](https://img.shields.io/github/repo-size/da1la/photoshopCClinux-Remixed) ![bash](https://img.shields.io/badge/zsh-5.9-magenta)
 </div>
 
 # Photoshop CC v19 installer for Linux
@@ -12,7 +12,6 @@ and sets some necessary components up for the best performance
 
 ## :rocket: Features
 * downloads necessary components and installs them (`vcrun`, `atmlib`, `msxml`...)
-* downloads `photoshop.exe` installer
 * creates photoshop command and a desktop entry
 * wine dark mode
 * supports graphic cards like (`intel`, `Nvidia`)
@@ -20,8 +19,19 @@ and sets some necessary components up for the best performance
 * It's free and you will not need any license key
 * works on any Linux distribution
 
+## List of deps:
+* wine
+* winetricks
+* lolcat :D
+* md5sum
+
+or just...
+```bash
+Sudo pacman -Syyu lolcat wine winetricks md5sum
+```
+
 ## :warning: You will need
-1. 64bit distro (asus eee pc 701 unsupported :sad: )
+1. 64bit distro (asus eee pc 701 unsupported)
 
 2. more than 3 braincells
 
@@ -33,14 +43,15 @@ and sets some necessary components up for the best performance
 1. clone this repo
 
 ```bash
-git clone https://github.com/Gictorbit/photoshopCClinux.git
-cd photoshopCClinux
+git clone https://github.com/da1la/photoshopCClinux-Remixed.git && cd photoshopCClinux
 ```
 2. run installer
 
 ```bash
 chmod +x setup.sh && ./setup.sh
 ```
+3. select "Install Photoshop CC"
+
 
 <div align="center" class="tip" markdown="1" style>
 
@@ -52,8 +63,7 @@ chmod +x setup.sh && ./setup.sh
 ## :wine_glass: wineprefix Configuration
 if you need to configure the wineprefix of photoshop you can use `winecfg.sh` script just run the command below
 ```bash
-chmod +x winecfg.sh
-./winecfg.sh
+chmod +x winecfg.sh && ./winecfg.sh
 ```
 ## :hammer: Tools
 
