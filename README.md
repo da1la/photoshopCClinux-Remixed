@@ -3,7 +3,7 @@
 
 ![screenshot](images/Screenshot.png)
 
-![wine version](https://img.shields.io/badge/wine-%E2%96%B25.22-red) ![Tested on arch](https://img.shields.io/badge/Tested%20on-Archlinux-brightgreen) ![GitHub stars](https://img.shields.io/github/stars/Gictorbit/photoshopCClinux) ![rep size](https://img.shields.io/github/repo-size/gictorbit/photoshopCClinux) ![bash](https://img.shields.io/badge/bash-5.0-yellowgreen)
+![wine version]([https://img.shields.io/badge/wine-8.20-red]) ![Tested on arch](https://img.shields.io/badge/Tested%20on-Archlinux-brightgreen) ![GitHub stars](https://img.shields.io/github/stars/Gictorbit/photoshopCClinux) ![rep size](https://img.shields.io/github/repo-size/da1la/photoshopCClinux-Remixed) ![bash](https://img.shields.io/badge/zsh-5.9-magenta)
 </div>
 
 # Photoshop CC v19 installer for Linux
@@ -20,68 +20,34 @@ and sets some necessary components up for the best performance
 * It's free and you will not need any license key
 * works on any Linux distribution
 
-## :warning: Requirements
-1- use a 64bit edition of your distro
+## :warning: You will need
+1. 64bit distro (asus eee pc 701 unsupported :sad: )
 
-2-make sure the following packages are already installed on your Linux distro
-* `wine`
-* `wine64`
-* `winetricks`
-* `md5sum`
+2. more than 3 braincells
 
+3. at least 5GB in your /home directory (or you can use -d /path/to/dir)
 
-if they are not already installed you can install them using your package manager for example in arch Linux
-```bash
-sudo pacman -S wine winetricks
-``` 
-3- make sure you have enough storage in your `/home` partition about `5 GiB`
-> 1 GiB will be free after installation
-
-also you can install photoshop in diffrent directory
-
-4- make sure you have an internet connection and about 1.5 Gib traffic to download photoshop and its components
+4. make sure you have an internet connection and about 1.5 Gib traffic to download photoshop and its components
 
 ## :computer: Installation
+1. clone this repo
 
-the installer scripts use a virtual drive of wine and makes a new `winprefix` for photoshop
-
-first of all, you need to clone the repository with this command:
 ```bash
 git clone https://github.com/Gictorbit/photoshopCClinux.git
 cd photoshopCClinux
 ```
-then you can easily run `setup.sh` script to install photoshop cc on your Linux distro
+2. run installer
 
 ```bash
-chmod +x setup.sh
-./setup.sh
+chmod +x setup.sh && ./setup.sh
 ```
-
-you can use `-d` to specify the installation path, and `-c` for the cache directory.
-for example:
-```bash
-./PhotoshopSetup.sh -d /mnt/myfiles/photoshop
-```
-or
-```bash
-./PhotoshopSetup.sh -d /mnt/myfiles/photoshop -c /mnt/cache
-```
-when no options are given, the installer script will use the default path, 
-the uninstaller script and others will detect your custom path so there is no problem,
-I recommend using the `-d` option  and having the default cache directory.
-this feature is currently being tested, and will be added to `setup.sh` later
-
 
 <div align="center" class="tip" markdown="1" style>
 
 ![setup-screenshot](images/setup-screenshot.png)
 </div>
 
-during installation please pay attention to the script messages
-
-> **NOTE :** make sure OS version in wine is on windows 7
-
-installer script use `winetricks` to install necessary components
+4. set windows 7 version of wine
 
 ## :wine_glass: wineprefix Configuration
 if you need to configure the wineprefix of photoshop you can use `winecfg.sh` script just run the command below
