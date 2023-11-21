@@ -8,12 +8,6 @@ function main() {
 
     setup_log "================| script executed |================"
 
-    #make sure wine and winetricks package is already installed
-    package_installed wine
-    package_installed wine64
-    package_installed md5sum
-    package_installed winetricks
-
     RESOURCES_PATH="$SCR_PATH/resources"
     WINE_PREFIX="$SCR_PATH/prefix"
 
@@ -24,19 +18,15 @@ function main() {
     export_var
 
     #config wine prefix and install mono and gecko automatic
-    echo -e "please install mono and gecko packages, change Windows version to Windows 7, then click apply > ok"
     winecfg -v win7
     #create resources directory
     rmdir_if_exist $RESOURCES_PATH
 
-    # winetricks atmlib corefonts fontsmooth=rgb gdiplus vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015 atmlib msxml3 msxml6 gdiplus
     winetricks --self-update
     winetricks -q atmlib fontsmooth=rgb vcrun2008 vcrun2010 vcrun2012 vcrun2013 atmlib msxml3 msxml6
 
     #install photoshop
-    sleep 3
     install_photoshopSE
-    sleep 5
     
     replacement
 
@@ -78,7 +68,7 @@ function install_photoshopSE() {
     local filename="photoshopCC-V19.1.6-2018x64.tgz"
     local filepath="$filename"
 
-    #wget -O $filename "https://www.dropbox.com/scl/fi/6xm3hsm3muvb25gpsdycg/photoshopCC-V19.1.6-2018x64.tgz?rlkey=xjspcevujzm7r6cca5yzu72jy&dl=1"
+    wget -O $filename "https://www.dropbox.com/scl/fi/6xm3hsm3muvb25gpsdycg/photoshopCC-V19.1.6-2018x64.tgz?rlkey=xjspcevujzm7r6cca5yzu72jy&dl=1"
     mkdir photoshopCC
     echo "extract photoshop..."
     tar -xzf "$filename" -C photoshopCC
